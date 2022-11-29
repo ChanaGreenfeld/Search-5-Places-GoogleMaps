@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@angular/router": "^15.0.1",
+    "ngx-google-places-autocomplete": "^2.0.5"
+  }
+}

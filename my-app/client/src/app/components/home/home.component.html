@@ -1,0 +1,12 @@
+<div class="container">
+
+  <div class="col">  
+    <label class="lbltxt">?מה תרצו לחפש</label>
+      <input class="searchInput" ngx-google-places-autocomplete placeholder="" (options)="(options)" (onAddressChange)="AddressChange($event)" [formControl]="searchControl" />
+  </div>
+ 
+    <hr />
+    <input type="button" class="searchButton" value="הצג מקומות קרובים" (click)="search()" />
+
+</div>
+

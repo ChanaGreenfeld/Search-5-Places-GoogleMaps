@@ -1,0 +1,19 @@
+<input type="button" class="btn" value="סיום" (click)="finish()">
+<div class="textContains" *ngIf="popularSearch$ | async as popularSearch">
+<label class="txt">החיפוש הפופולרי ביותר</label> 
+<label class="result">"{{popularSearch.search}}"</label>
+<div></div>
+<label class="search">חיפושים  </label>
+
+<label class="counter">{{popularSearch.counter}} </label>
+</div>
+
+<div class="containers">
+<label class="txt2">המקומות הקרובים  ל - 5 </label>
+<label class="currentSearch">{{this.currentSearch}}</label>
+<div *ngFor="let place of places" class="nearby">
+    <label class="name">{{place.name}}</label>
+    <div></div>
+    <label class="address">{{place.address}}</label>
+</div>
+</div>
